@@ -1,0 +1,52 @@
+Skapa din egen portfolio
+Beskrivning
+Du ska skapa en personlig portfolio som presenterar dig och ditt arbete. Portfolion ska fungera som en responsiv webbplats som ser bra ut på både mobila och större skärmar. Det här är en möjlighet att visa upp din kreativitet och tillämpa det du lärt dig om HTML, CSS och responsiv design.
+
+Syfte
+Använda semantisk HTML för att skapa en tydlig struktur
+Fördjupa dina kunskaper i CSS och responsiv design
+Skapa en verklighetsnära portfolio som du kan vidareutveckla i framtiden
+
+Krav för godkänt
+HTML-struktur
+En startsida med:
+En tydlig huvudrubrik (t.ex. "Välkommen till min portfolio")
+En kort introduktion om dig själv
+En projektsektion som listar minst tre projekt eller exempel (riktiga eller fiktiva) du har arbetat på, med:
+Projektnamn
+En kort beskrivning
+En bild eller ikon
+En länk (om det är ett verkligt projekt)
+En kontaktsektion med e-postadress eller en enkel kontaktformulär
+En separat om mig-sida:
+En profilbild
+En längre presentation av dig själv
+
+Responsiv design
+Webbplatsen ska vara designad enligt mobile-first-principen och anpassa sig för större skärmar med hjälp av media queries
+Använd flexbox för att layouta innehållet
+
+CSS-styling
+Tydlig och genomtänkt design:
+Genomgående färgtema och typografi
+En toppmeny som fungerar både på mobil och större skärmar. OBS! Den behöver inte vara interaktiv, utan endast se bra ut i olika skärmstorlekar
+
+Användarvänlighet
+Lättnavigerad struktur: både förstasidan och profilsidan ska kunna nås via menyn
+
+Filstruktur
+Använd en extern CSS-fil och plain CSS för styling (precis som vi har gjort hittills!)
+
+För högre betyg
+Mycket välstrukturerad och semantisk kod (använd Prettier för kodformattering och se till att välja genomtänkta HTML-element)
+Använd pseudoklasser (ex. :hover) eller CSS-animationer för att förbättra användarupplevelsen
+
+Bedömningskriterier
+Om alla krav för godkänt är uppfyllda
+Design och struktur
+- Om layouten är genomtänkt och responsiv
+- Om semantisk HTML och CSS används effektivt
+Kodkvalitet
+- Om koden är organiserad och lättläst
+Funktionalitet
+- Om navigeringen fungerar

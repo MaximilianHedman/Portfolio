@@ -1,0 +1,74 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: #303030;
+    color: #fff;
+}
+
+/*_________________________________NAVBAR_________________________________*/
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    /* border: 1px solid green; */
+    background-color: hsl(0, 0%, 10%);
+}
+
+nav .nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#active {
+    color: rgb(214, 79, 79);
+}
+
+/*_________________________________MAIN__________________________________*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    /* border: 2px solid blue; */
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+main h2 {
+    text-align: center;
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    padding: 1rem;
+    background-color: darkblue;
+}
+
+/*_________________________________FOOTER________________________________*/
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    /* border: 1px solid red; */
+    background-color: hsl(0, 0%, 9%);
+}
