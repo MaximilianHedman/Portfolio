@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: #fff;
 }
 
 body, html {
@@ -11,7 +12,21 @@ body, html {
     justify-content: space-between;
     height: 100%;
     background-color: #303030;
-    color: #fff;
+    min-width: 375px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    gap: 1rem;
+}
+
+a {
+    text-decoration: none;
 }
 
 /*_________________________________NAVBAR_________________________________*/
@@ -20,55 +35,80 @@ header nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    /* border: 1px solid green; */
+    padding: 0 2rem;
     background-color: hsl(0, 0%, 10%);
 }
 
-nav .nav-links {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 1rem;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #fff;
-}
-
 #active {
-    color: rgb(214, 79, 79);
+    color: #d64f4f;
+}
+
+.fa {
+    margin-top: .5rem;
 }
 
 /*_________________________________MAIN__________________________________*/
 main {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
     height: 100%;
-    /* border: 2px solid blue; */
     gap: 1rem;
     padding: 1rem 0;
 }
 
-main h2 {
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
+    padding: 1rem;
     width: 100%;
 }
 
-section {
-    width: 100%;
+main .link-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .link-container ul li {
+    /* width: fit-content; */
     padding: 1rem;
-    background-color: purple;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+main .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+main .contact-info .red {
+    color: #d64f4f;
+}
+
+main .back-to-top a {
+    display: flex;
+    gap: .5rem;
+    margin: auto;
+}
+
+main .back-to-top .arrow {
+    font-size: .9rem;
+    font-weight: 900;
 }
 
 /*_________________________________FOOTER________________________________*/
 footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
     padding: 1rem;
-    /* border: 1px solid red; */
+    gap: 1rem;
     background-color: hsl(0, 0%, 9%);
 }
