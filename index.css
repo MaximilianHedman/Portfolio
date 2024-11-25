@@ -60,45 +60,44 @@ main {
 
 section {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 1rem;
+    padding: 0 1rem;
     width: 100%;
-}
-
-main .link-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-main .link-container ul li {
-    /* width: fit-content; */
-    padding: 1rem;
-    border-radius: 50%;
-    background-color: gray;
-}
-
-main .contact-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     gap: 1rem;
 }
 
-main .contact-info .red {
-    color: #d64f4f;
+.card {
+    flex-direction: column;
+    overflow: hidden;
+    max-width: 10rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 10);
+    background-color: #f2f2f2;
 }
 
-main .back-to-top a {
+.card-img {
     display: flex;
-    gap: .5rem;
-    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0 .5rem;
+    /* background-color: #ffaa00; */
 }
 
-main .back-to-top .arrow {
-    font-size: .9rem;
-    font-weight: 900;
+.card-img img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.card-text {
+    padding: 0 1rem 1rem 1rem;
+    text-align: left;
+}
+
+.card-text h4, p {
+    color: #000;
 }
 
 /*_________________________________FOOTER________________________________*/

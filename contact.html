@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://w3.p2hp.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/contact.css">
+    <link rel="stylesheet" href="./contact.css">
     <title>Contact</title>
 </head>
 
@@ -33,9 +33,15 @@
     <main>
         <h2>Contact</h2>
         <section>
-            <p>Hej på dig</p>
-            <p>Hej på dig</p>
-            <p>Hej på dig</p>
+            <form action="submit">
+                <div class="email-container">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" placeholder="name@email.com">
+                </div>
+                <textarea name="" id="textarea" rows="5" cols="50" placeholder="Write message..."></textarea>
+
+                <div class="btn-container"><button class="submit-btn">Submit</button></div>
+            </form>
         </section>
     </main>
 
