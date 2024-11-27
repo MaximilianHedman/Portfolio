@@ -61,6 +61,14 @@ header nav {
     margin-top: .5rem;
 }
 
+.nav-links {
+    display: block;
+}
+
+.nav-links-desktop {
+    display: none;
+}
+
 /*_________________________________MAIN__________________________________*/
 main {
     display: flex;
@@ -136,4 +144,15 @@ footer {
     padding: 1rem;
     gap: 1rem;
     background-color: #171717;
+}
+
+/* Change to hamburger menu and desktop menu */
+@media (min-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links-desktop {
+        display: flex;
+    }
 }
