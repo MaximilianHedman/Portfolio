@@ -6,7 +6,8 @@
     color: #fff;
 }
 
-body, html {
+body,
+html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -16,7 +17,12 @@ body, html {
     background-color: #303030;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
 
@@ -31,6 +37,9 @@ ul {
 }
 
 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
 }
 
@@ -67,9 +76,13 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
     padding: 1rem;
     width: 100%;
+}
+
+main .introduction {
+    width: 100%;
+    text-align: center;
 }
 
 main .link-container {
@@ -85,6 +98,10 @@ main .link-container ul li {
     height: 3.75rem;
     border-radius: 50%;
     background-color: gray;
+}
+
+main .link-container ul a li i {
+    margin-bottom: .35rem;
 }
 
 main .contact-info {
@@ -120,4 +137,3 @@ footer {
     gap: 1rem;
     background-color: #171717;
 }
-
