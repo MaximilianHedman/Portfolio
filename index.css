@@ -20,6 +20,14 @@ h1, h2, h3, h4, h5, h6 {
      margin: 0;
 }
 
+h4 {
+    font-size: 19px;
+}
+
+p {
+    font-size: 16px;
+}
+
 ul {
     display: flex;
     flex-direction: row;
@@ -67,13 +75,8 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    /* height: 100%; */
     gap: 1rem;
     padding: 2rem 0;
-}
-
-.welcome-container h2 {
-    font-weight: 600;
 }
 
 section {
@@ -85,6 +88,14 @@ section {
     padding: 0 1rem;
     width: 100%;
     gap: 2rem;
+}
+
+.welcome-container {
+    padding-bottom: 1rem;
+}
+
+.welcome-container h2 {
+    font-weight: 600;
 }
 
 .card-link {
@@ -129,14 +140,16 @@ section {
     padding: .5rem 0 1rem 0;
 }
 
-main .back-to-top a {
+.card-text
+
+.back-to-top a {
     padding-top: 1rem;
     display: flex;
     gap: .5rem;
     margin: auto;
 }
 
-main .back-to-top .arrow {
+.back-to-top .arrow {
     font-size: .9rem;
     font-weight: 900;
 }
@@ -154,12 +167,22 @@ footer {
 }
 
 /*_________________________________MEDIA QUERY'S__________________________*/
-@media (min-width: 768px) {
+@media (min-width: 540px) {
+    h4 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 933px) {
     .nav-links {
         display: none;
     }
 
     .nav-links-desktop {
         display: flex;
+    }
+
+    h4 {
+        font-size: 28px;
     }
 }

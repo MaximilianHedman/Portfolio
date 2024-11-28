@@ -114,16 +114,16 @@ section {
     background-color: gray;
 }
 
-.link-container ul a li i {
-    margin-bottom: .35rem;
-}
-
 .contact-info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 1rem;
     width: 100%;
+}
+
+.contact-info .bold {
+    font-weight: 700;
 }
 
 .contact-info .red {
