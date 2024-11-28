@@ -44,12 +44,21 @@ header nav {
     background-color: hsl(0, 0%, 10%);
 }
 
+.brand-container h2 {
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+}
+
 #active {
     color: #d64f4f;
 }
 
-.fa {
-    margin-top: .5rem;
+.nav-links {
+    display: block;
+}
+
+.nav-links-desktop {
+    display: none;
 }
 
 /*_________________________________MAIN__________________________________*/
@@ -60,11 +69,11 @@ main {
     align-items: center;
     /* height: 100%; */
     gap: 1rem;
-    padding: 1rem 0 2rem 0;
+    padding: 2rem 0;
 }
 
-.bold {
-    font-weight: 700;
+.welcome-container h2 {
+    font-weight: 600;
 }
 
 section {
@@ -142,4 +151,15 @@ footer {
     padding: 1rem;
     gap: 1rem;
     background-color: hsl(0, 0%, 9%);
+}
+
+/*_________________________________MEDIA QUERY'S__________________________*/
+@media (min-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links-desktop {
+        display: flex;
+    }
 }
