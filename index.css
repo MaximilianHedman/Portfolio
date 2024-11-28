@@ -55,6 +55,7 @@ header nav {
 .brand-container h2 {
     font-family: "Dancing Script", cursive;
     font-weight: 700;
+    font-size: 26px;
 }
 
 #active {
@@ -62,11 +63,15 @@ header nav {
 }
 
 .nav-links {
-    display: block;
+    display: flex;
 }
 
 .nav-links-desktop {
     display: none;
+}
+
+.nav-links-desktop a {
+    font-size: 24px;
 }
 
 /*_________________________________MAIN__________________________________*/
@@ -76,7 +81,7 @@ main {
     justify-content: flex-start;
     align-items: center;
     gap: 1rem;
-    padding: 2rem 0;
+    padding: 5rem 0 2rem 0;
 }
 
 section {
@@ -91,10 +96,11 @@ section {
 }
 
 .welcome-container {
-    padding-bottom: 1rem;
+    padding-bottom: 4rem;
 }
 
 .welcome-container h2 {
+    font-size: 26px;
     font-weight: 600;
 }
 
@@ -122,7 +128,6 @@ section {
     justify-content: center;
     width: 23.6rem;
     height: 16.5rem;
-    /* background-color: #ffaa00; */
 }
 
 .card-img img {
@@ -140,18 +145,27 @@ section {
     padding: .5rem 0 1rem 0;
 }
 
-.card-text
+.back-to-top {
+    padding: 5rem 0 4rem 0;
 
-.back-to-top a {
-    padding-top: 1rem;
-    display: flex;
-    gap: .5rem;
-    margin: auto;
 }
 
-.back-to-top .arrow {
-    font-size: .9rem;
-    font-weight: 900;
+.back-to-top a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 10);
+}
+
+.back-to-top a:hover {
+    box-shadow: 0 0 5px 2px #39FF14;
+}
+
+.back-to-top a .bold {
+    font-weight: 600;
 }
 
 /*_________________________________FOOTER________________________________*/
@@ -166,8 +180,21 @@ footer {
     background-color: hsl(0, 0%, 9%);
 }
 
+footer i:hover {
+    color: #d64f4f;
+}
+
 /*_________________________________MEDIA QUERY'S__________________________*/
 @media (min-width: 540px) {
+    
+    .brand-container h2 {
+        font-size: 36px;
+    }
+    
+    .welcome-container h2 {
+        font-size: 29px;
+    }
+    
     h4 {
         font-size: 22px;
     }
@@ -180,6 +207,19 @@ footer {
 
     .nav-links-desktop {
         display: flex;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+
+    
+    .brand-container h2 {
+        font-size: 60px;
+    }
+    
+    .welcome-container h2 {
+        font-size: 35px;
     }
 
     h4 {

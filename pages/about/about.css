@@ -27,7 +27,7 @@ h6 {
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 ul {
@@ -67,11 +67,15 @@ header nav {
 }
 
 .nav-links {
-    display: block;
+    display: flex;
 }
 
 .nav-links-desktop {
     display: none;
+}
+
+.nav-links-desktop a {
+    font-size: 24px;
 }
 
 /*_________________________________MAIN__________________________________*/
@@ -82,7 +86,6 @@ main {
     align-items: center;
     padding: 2rem;
     gap: 1rem;
-    /* height: 100%; */
 }
 
 section {
@@ -94,8 +97,6 @@ section {
 }
 
 .introduction {
-    flex: 1;
-    margin: auto;
     text-align: center;
 }
 
@@ -111,7 +112,11 @@ section {
     width: 3.75rem;
     height: 3.75rem;
     border-radius: 50%;
-    background-color: gray;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 10);
+}
+
+.link-container ul li:hover {
+    box-shadow: 0 0 5px 2px #39FF14;
 }
 
 .contact-info {
@@ -132,13 +137,20 @@ section {
 
 .back-to-top a {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: .5rem;
-    margin: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 10);
 }
 
-.back-to-top .arrow {
-    font-size: .9rem;
-    font-weight: 900;
+.back-to-top a:hover {
+    box-shadow: 0 0 5px 2px #39FF14;
+}
+
+.back-to-top a .bold {
+    font-weight: 600;
 }
 
 /*_________________________________FOOTER________________________________*/
@@ -153,8 +165,16 @@ footer {
     background-color: #171717;
 }
 
+footer i:hover {
+    color: #d64f4f;
+}
+
 /*_________________________________MEDIA QUERY'S__________________________*/
 @media (min-width: 540px) {
+    .brand-container h2 {
+        font-size: 36px;
+    }
+    
     .introduction p {
         font-size: 38px;
     }
@@ -165,7 +185,7 @@ footer {
     }
 
     .contact-info p {
-        font-size: 17px;
+        font-size: 19px;
     }
 }
 
@@ -178,12 +198,20 @@ footer {
         display: flex;
     }
 
+    header nav {
+        flex-direction: column;
+    }
+
+    .brand-container h2 {
+        font-size: 60px;
+    }
+
     main {
         gap: 5rem;
-        padding: 5rem 0;
+        padding: 7rem 0 5rem 0;
     }
 
     .contact-info p {
-        font-size: 20px;
+        font-size: 22px;
     }
 }
