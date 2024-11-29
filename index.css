@@ -3,10 +3,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: #fff; 
+    color: #fff;
 }
 
-body, html {
+body,
+html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -16,8 +17,14 @@ body, html {
     background-color: #303030;
 }
 
-h1, h2, h3, h4, h5, h6 {
-     margin: 0;
+/*_________________________________MISC___________________________________*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
 }
 
 h4 {
@@ -186,15 +193,15 @@ footer i:hover {
 
 /*_________________________________MEDIA QUERY'S__________________________*/
 @media (min-width: 540px) {
-    
+
     .brand-container h2 {
         font-size: 36px;
     }
-    
+
     .welcome-container h2 {
         font-size: 29px;
     }
-    
+
     h4 {
         font-size: 22px;
     }
@@ -213,11 +220,11 @@ footer i:hover {
         flex-direction: column;
     }
 
-    
+
     .brand-container h2 {
         font-size: 60px;
     }
-    
+
     .welcome-container h2 {
         font-size: 35px;
     }

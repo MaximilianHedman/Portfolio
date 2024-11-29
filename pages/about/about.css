@@ -17,6 +17,7 @@ html {
     background-color: #303030;
 }
 
+/*_________________________________MISC___________________________________*/
 h1,
 h2,
 h3,
@@ -174,7 +175,7 @@ footer i:hover {
     .brand-container h2 {
         font-size: 36px;
     }
-    
+
     .introduction p {
         font-size: 38px;
     }
