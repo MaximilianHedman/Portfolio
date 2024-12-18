@@ -3,10 +3,10 @@ const savedTheme = localStorage.getItem("theme");
 
 if (savedTheme === "light") {
   document.body.classList.add("light-mode");
-  toggleThemeButton.textContent = "Byt till Light Mode";
+  toggleThemeButton.textContent = "Change to Dark Mode";
 } else {
   document.body.classList.remove("light-mode");
-  toggleThemeButton.textContent = "Byt till Light Mode";
+  toggleThemeButton.textContent = "Change to Light Mode";
 }
 
 toggleThemeButton.addEventListener("click", () => {
@@ -14,8 +14,8 @@ toggleThemeButton.addEventListener("click", () => {
   const isLightMode = document.body.classList.contains("light-mode");
 
   toggleThemeButton.textContent = isLightMode
-    ? "Byt till Dark Mode"
-    : "Byt till Light Mode";
+    ? "Change to Dark Mode"
+    : "Change to Light Mode";
 
   localStorage.setItem("theme", isLightMode ? "light" : "light");
 });
